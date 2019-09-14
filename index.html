@@ -1,0 +1,401 @@
+<html>
+<head>
+	<style type="text/css">
+	main { 
+		height: 100%;
+		width: 100%;
+		background-color: white;
+		display: grid;
+		grid-template-columns: 3fr 1fr
+		}
+	</style>	
+<title>Remittance</title>
+<link rel="icon" href="https://i.ibb.co/ZVRwm3b/Buro.png" type="image/x-icon" />
+</head>
+
+<body>
+	<header>
+	</header>
+	
+	<main>
+		<div><br><br>
+<!!------------Start of Remittance Header---------------->		
+			<div align="center">
+			<img src="https://lh4.googleusercontent.com/l5pbIqclttzd7-OE3llNiXvh61FUUbnTUbAC5NVJd8eLP8ULDkX3-HE11Bh1BpsqsRGEc1sB9FTruJ-l6gEZDu1M6TVWQa0Cnhi32ZHXbH_GnA2e46U=w874" alt="BURO Remittance" width="600" height="200">
+			</div>
+<!!------------Closed of Remittance Header---------------->	
+<br><br><br><br>		
+<!!------------Start of Client Admin Module---------------->			
+			<div height="100px" align="center">
+<html>
+<table align="center">
+<tr>
+<th>
+<!DOCTYPE html>
+<html>
+<div align="left">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-card {
+ background-color: transparent;
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: transparent;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: transparent;
+  color: white;
+  transform: rotateY(180deg);
+}
+</style>
+</head>
+<body>
+
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+<a href="https://sites.google.com/view/buroremittance/login-client?authuser=0">
+    <div class="flip-card-front">
+      <img src="https://i.ibb.co/W5Bcwv3/Client.png" alt="Avatar" style="width:200px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <img src="https://i.ibb.co/4Z8hqJ3/Client-2.png" alt="Avatar" style="width:200px;height:200px;"> 
+    </div>
+</a>
+  </div>
+</div>
+
+</body></div>
+</html>
+</th>
+<th width="150">
+</th>
+<th>
+<!DOCTYPE html>
+<html>
+<div align="right">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-card {
+ background-color: transparent;
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: transparent;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: transparent;
+  color: white;
+  transform: rotateY(180deg);
+}
+</style>
+</head>
+<body>
+
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+<a href="Files/admin_login.php">
+    <div class="flip-card-front">
+      <img src="https://i.ibb.co/fkGPb5k/User.png" alt="Avatar" style="width:200px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <img src="https://i.ibb.co/k31TMn6/Admin-2.png" alt="Avatar" style="width:200px;height:200px;"> 
+    </div>
+</a>
+  </div>
+</div>
+
+</body></div>
+</html>
+</th>
+</tr>
+</table>
+</html>
+			</div>
+<!!------------Closed of Client Admin Module---------------->			
+		</div>
+		
+		<div>
+<br><br>		
+<!––------------------- Start of Clock –-----------------–>
+			<div>
+				<html>
+<div align="center">
+<canvas id="canvas" width="150" height="150"
+style="background-color:#fffff">
+</canvas>
+
+<script>
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+var radius = canvas.height / 2;
+ctx.translate(radius, radius);
+radius = radius * 0.90
+setInterval(drawClock, 1000);
+
+function drawClock() {
+  drawFace(ctx, radius);
+  drawNumbers(ctx, radius);
+  drawTime(ctx, radius);
+}
+
+function drawFace(ctx, radius) {
+  var grad;
+  ctx.beginPath();
+  ctx.arc(0, 0, radius, 0, 2*Math.PI);
+  ctx.fillStyle = 'white';
+  ctx.fill();
+  grad = ctx.createRadialGradient(0,0,radius*0.95, 0,0,radius*1.05);
+  grad.addColorStop(0, '#333');
+  grad.addColorStop(0.5, 'white');
+  grad.addColorStop(1, '#333');
+  ctx.strokeStyle = grad;
+  ctx.lineWidth = radius*0.1;
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.arc(0, 0, radius*0.1, 0, 2*Math.PI);
+  ctx.fillStyle = '#333';
+  ctx.fill();
+}
+
+function drawNumbers(ctx, radius) {
+  var ang;
+  var num;
+  ctx.font = radius*0.15 + "px arial";
+  ctx.textBaseline="middle";
+  ctx.textAlign="center";
+  for(num = 1; num < 13; num++){
+    ang = num * Math.PI / 6;
+    ctx.rotate(ang);
+    ctx.translate(0, -radius*0.85);
+    ctx.rotate(-ang);
+    ctx.fillText(num.toString(), 0, 0);
+    ctx.rotate(ang);
+    ctx.translate(0, radius*0.85);
+    ctx.rotate(-ang);
+  }
+}
+
+function drawTime(ctx, radius){
+    var now = new Date();
+    var hour = now.getHours();
+    var minute = now.getMinutes();
+    var second = now.getSeconds();
+    //hour
+    hour=hour%12;
+    hour=(hour*Math.PI/6)+
+    (minute*Math.PI/(6*60))+
+    (second*Math.PI/(360*60));
+    drawHand(ctx, hour, radius*0.5, radius*0.07);
+    //minute
+    minute=(minute*Math.PI/30)+(second*Math.PI/(30*60));
+    drawHand(ctx, minute, radius*0.8, radius*0.07);
+    // second
+    second=(second*Math.PI/30);
+    drawHand(ctx, second, radius*0.9, radius*0.02);
+}
+
+function drawHand(ctx, pos, length, width) {
+    ctx.beginPath();
+    ctx.lineWidth = width;
+    ctx.lineCap = "round";
+    ctx.moveTo(0,0);
+    ctx.rotate(pos);
+    ctx.lineTo(0, -length);
+    ctx.stroke();
+    ctx.rotate(-pos);
+}
+</script>
+</div>
+</html>
+			</div>
+<!–-----------------– Closed of Clock –-------------------–>
+<br><br>
+<!–------------------ Start of BUROBD Logo ––------------>
+			<div>
+<html>
+<div align="center">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-card {
+ background-color: transparent;
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: transparent;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: transparent;
+  color: white;
+  transform: rotateY(180deg);
+}
+</style>
+</head>
+<body>
+
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://s3.gifyu.com/images/LOGO-f.gif" alt="Avatar" style="width:200px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <img src="https://s3.gifyu.com/images/LOGO-f.gif" alt="Avatar" style="width:200px;height:200px;"> 
+    </div>
+  </div>
+</div>
+
+</body></div>
+</html>
+			</div>
+<!––----------- Closed BUROBD of  Logo ––------------->
+<br><br>
+<!––----------- Start of Remittance Logo ––------------->
+			<div>
+<html>
+
+<head>
+<style>
+	mySlides {display:none;}
+</style>
+</head>
+
+<body>
+
+
+<div align="center">
+  <img class="mySlides" src="https://lh6.googleusercontent.com/loSapj1jVlEhKH7y1Fgd8KASqIVkc7hvs7ypISVPuYrX5-GcICBoB94_F9U4tKFFA9-YvLCf=w16383" alt="Ria Money Transfer" style="width:200px">
+  <img class="mySlides" src="https://lh6.googleusercontent.com/7FbLebC78cIi7Ub1UNuzXupFT00NTEfuEW9HbFPDQuC1nUfQwI3G9uBsMVv9QuHRto46aSMSxw=w16383" alt="Transfast Money Transfer" style="width:200px">
+  <img class="mySlides" src="https://lh5.googleusercontent.com/BtXL7bsp9DkV6r4_6DTlx5S45Sto2t9JMcmgQonyQlw8XvSG4R267efYq-S55HWuAWEs0WX6=w16383" alt="Prabhu Money Transfer" style="width:200px">
+  <img class="mySlides" src="https://lh6.googleusercontent.com/MggIq_0eIMCKDhcesY39ro6-SI_JvkOILQupQZIbWEg2NZLCARhyNq9dg7QD1pa17XG2EGI=w16383" alt="Money Gram Money Transfer" style="width:200px">
+  <img class="mySlides" src="https://lh5.googleusercontent.com/F2mvPtLoyWgEi-_-9UTrCTaPBdX95wECKRk9JilnWdfqkvH-WXge_fFNQwR4BBijlHFheEQHjA=w16383" alt="Western Union Money Transfer" style="width:200px">
+  <img class="mySlides" src="https://lh6.googleusercontent.com/2AHetldvfh98XFO1Vlus19Bne3WlpJZAG1D4SiOIDcEZoUF5q_u7-zd9ZxAJIFccWEK5nab7ww=w16383" alt="Xpress Money Transfer" style="width:200px">
+  <img class="mySlides" src="https://lh4.googleusercontent.com/YdvGL3hptUQCVr_hvU7WBtAXv_CF6A7OJTz1itwmrkBT5EYb1cysPnyDk38G-IbFom2jZXVJ=w16383" alt="Placid Express Money Transfer" style="width:200px">
+  <img class="mySlides" src="https://lh3.googleusercontent.com/g7Nnky_jnSqpHZM59tWEybePeXux9Sng7Kbh-VTiRKqccHq9OGl5HdeU8tvrzDBSfQxwjc1l=w16383" alt="Merchantrade Money Transfer" style="width:200px">
+  
+
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>
+			</div>
+		</div>	
+	</main>
+	
+	<footer>
+	</footer>
+</body>
+
+</html>
