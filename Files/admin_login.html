@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>Remittance</title>
+<link rel="icon" href="https://i.ibb.co/ZVRwm3b/Buro.png" type="image/x-icon" />
+</head>
+<body>
+<br><br><br><br><br><br><br><br><br>
+<form name="loginForm"  method="post" action="Dashboard_Client.html">
+<table width="30%" bgcolor="00FFF3" align="center">
+
+<tr><td>
+<br></td></tr>
+
+<tr>
+<th>
+<center><img src="https://www.burobd.org/images/buro-bangladesh.png" alt="BURO Bangladesh" width="70" height="70">
+</center>
+</th>
+<th><center><font size=6><b>Remittance</b></font></center>
+		
+	<center><font size=3><b>BURO Bangladesh</b></font></center>
+		
+	<center><font size=3><b>Dhaka Metropolitan Zone</b></font>
+</th>
+</tr>
+
+<tr><td>
+<br></td></tr>
+
+<tr>
+<td><font size=3><b>Username:</b></font></td>
+<td><input type="text" size=50 name="userid"></td>
+</tr>
+
+<tr>
+<td><font size=3><b>Password:</b></td>
+<td><input type="Password" size=50 name="pwd"></td>
+</tr>
+
+<tr>
+<td ></td>
+<td><input type="submit" onclick="return check(this.form)" value="Login"></td>
+</tr>
+
+<tr><td>
+<br></td></tr>
+
+</table>
+</form>
+<script language="javascript">
+function check(form)
+{
+if(form.userid.value == "admin" && form.pwd.value == "dhaka@123")
+{
+	return true;
+}
+else
+{
+	alert("Error Password or Username")
+	return false;
+}
+}
+</script>
+</body>
+</html>
