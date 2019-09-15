@@ -7,7 +7,7 @@
 </head>
 <body>
 <br><br><br><br><br><br><br><br><br>
-<form name="loginForm"  method="post" action="https://sites.google.com/view/buroremittance/dashboard">
+<form name="loginForm"  method="post" action="Dashboard_Client.html">
 <table width="30%" bgcolor="00FFF3" align="center">
 
 <tr><td>
