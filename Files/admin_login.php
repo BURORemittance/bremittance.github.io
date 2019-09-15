@@ -1,6 +1,5 @@
 
 <html>
-<?php
 <head>
 <title>Remittance</title>
 <link rel="icon" href="https://i.ibb.co/ZVRwm3b/Buro.png" type="image/x-icon" />
@@ -65,6 +64,5 @@ else
 }
 </script>
 </body>
-?>
 </html>
 
